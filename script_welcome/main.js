@@ -45,7 +45,7 @@ $('.one-time').slick({
 var mainSlider = $('.one-time');
 var innerText = $('.txt-box');
 
-mainSlider.on('wheel', function(e) {
+mainSlider.on('mouseup', function(e) {
     e.preventDefault();
   
     if (e.originalEvent.deltaY < 0) {
@@ -55,7 +55,7 @@ mainSlider.on('wheel', function(e) {
     }
   });
   
-  innerText.on('wheel', function(e) {
+  innerText.on('mouseup', function(e) {
       e.stopPropagation();
   })
 
