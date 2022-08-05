@@ -42,6 +42,45 @@ $('.one-time').slick({
     // ]
 });
 
+var mainSlider = $('.one-time');
+var innerText = $('.txt-box');
+
+mainSlider.on('wheel', function(e) {
+    e.preventDefault();
+  
+    if (e.originalEvent.deltaY < 0) {
+      $(this).slick('slickPrev');
+    } else {
+      $(this).slick('slickNext');
+    }
+  });
+  
+  innerText.on('wheel', function(e) {
+      e.stopPropagation();
+  })
+
+  $(function(){
+    var curDown = false,
+        curYPos = 0,
+        curXPos = 0;
+    
+    $(window).mousemove(function(m){
+      if(curDown){
+        window.scrollBy(curXPos - m.pageX, curYPos - m.pageY)
+      }
+    });
+    
+    $(window).mousedown(function(m){
+      curYPos = m.pageY;
+      curXPos = m.pageX;
+      curDown = true;
+    });
+    
+    $(window).mouseup(function(){
+      curDown = false;
+    });
+  })
+  
 
 // ------------------------------------------------------------------------------------------------------------------------------------------ //
 // **********************************************************| 스와이프 조작 팝업 |********************************************************** //
