@@ -79,11 +79,13 @@
 <!-- <link rel="stylesheet" type="text/css" href="images/style.css?ver=2101125"> -->
 <link rel="stylesheet" type="text/css" href="./css_welcome/style.css">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css">
+
 <body>
     <!-- 본문 -->
     <!-- 컨텐츠 -->
     <div id="welcome_buisiness" class="buisiness2">
-        <div class="one-time slide-wrap">
+        <div id="fullPage" class="one-time slide-wrap">
             <div class="slide-box slide1">
                 <div class="swipe-box">
                     <img src="img_welcome/swipe-icon.svg" alt="좌우로넘겨서보세요">
@@ -225,7 +227,8 @@
                     </div>
                     <div class="scroll_box">
                         <div class="txt-box">
-                            <p>많은 분들의 후원으로 골수이식 수술을 받고 이사도 하게 된 연지네 가정처럼 후원자님의 도움은 갑작스러운 위기에 처한 많은 아이들의 미소를 되찾아 주고 있답니다.</p>
+                            <p>많은 분들의 후원으로 골수이식 수술을 받고 이사도 하게 된 연지네 가정처럼 후원자님의 도움은 갑작스러운 위기에 처한 많은 아이들의 미소를 되찾아 주고 있답니다.<br>
+                                많은 분들의 후원으로 골수이식 수술을 받고 이사도 하게 된 연지네 가정처럼 후원자님의 도움은 갑작스러운 위기에 처한 많은 아이들의 미소를 되찾아 주고 있답니다.</p>
                         </div>
                         <div class="btn_wrap">
                             <a href="http://m.worldvision.or.kr/story/yj-result/" class="solid-btn mobile" target="_blank">연지의 변화이야기 자세히 보기</a>
@@ -374,7 +377,9 @@
     <!-- 본문 -->
     <script src="//code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script src="./script_welcome/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+    <script src="./script_welcome/scrolloverflow.min.js"></script>
+    <script src="./script_welcome/main_full.js"></script>
 
 </body>
 
