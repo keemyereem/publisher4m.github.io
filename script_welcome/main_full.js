@@ -12,6 +12,8 @@ $(document).ready(function(){
         sectionSelector: '.slide-box',
         fitToSection: true,
         scrollOverflow: true,
+        dragAndMove: true,
+        
     });
 
 
