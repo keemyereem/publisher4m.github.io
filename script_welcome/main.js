@@ -43,9 +43,9 @@ $('.one-time').slick({
 });
 
 var mainSlider = $('.one-time');
-var innerText = $('.txt-box');
+var innerText = $('.con-wrap');
 
-mainSlider.on('mouseup', function(e) {
+mainSlider.on('scroll', function(e) {
     e.preventDefault();
   
     if (e.originalEvent.deltaY < 0) {
@@ -55,7 +55,7 @@ mainSlider.on('mouseup', function(e) {
     }
   });
   
-  innerText.on('mouseup', function(e) {
+  innerText.on('scroll', function(e) {
       e.stopPropagation();
   })
 
