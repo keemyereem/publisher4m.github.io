@@ -1,0 +1,229 @@
+
+/* --------------------- DoosanENC Released 0000.00.00 --------------------- */
+/* --------------------- Published by 4m Creative --------------------- */
+
+#mobile { max-width: 768px; width: 100%; margin: auto; right: 0; left: 0; box-shadow: 0px 0px 10px rgba(0,0,0,.6); overflow-x: hidden; }
+
+/* header */
+#mobile .header { max-width: 768px; width: 100%; margin: auto; right: 0; left: 0; padding: 0 2rem; }
+#mobile .header .header_wrap { height: 6rem; justify-content: space-between; }
+#mobile .header .logo { width: 7.7rem; height: 2.1rem; margin-right: 0; background-size: contain !important; }
+#mobile .header .gnb_menu { width: 100%; }
+/* #mobile .header .gnb,
+#mobile .header .lang_select,
+#mobile .header .right_nav { display: none; } */
+#mobile .header .top_sitemap button { width: 2.7rem; height: 1.75rem; }
+#mobile .header .top_sitemap button span { width: 1.95rem; height: 2.5rem; margin-left: .75rem; margin-bottom: 0.5rem; }
+#mobile .header .top_sitemap button span:nth-child(2) { width: 2.7rem; margin-left: 0; }
+
+/* sitemap */
+
+/* container*/
+#mobile #sub .container .inner { width: calc(100% - 4rem); }
+
+
+
+/* sub_visual */
+#mobile .container .sub_visual { height: 47.5rem; }
+#mobile .container .sub_visual h1 { font-size: 4rem; transform: translateY(1.1rem); }
+#mobile .container .sub_visual .sub_visual_menu { width: 100%; height: 4.5rem; bottom: 9rem; }
+#mobile .container .sub_visual .sub_visual_menu .home { width: 4.5rem; height: 4.5rem; background-size: 1.15rem 1.15rem; }
+#mobile .container .sub_visual .sub_visual_menu .depth1 { width: calc(50% - 3.75rem); }
+#mobile .container .sub_visual .sub_visual_menu .depth2 { width: calc(50% - .75rem); }
+#mobile .container .sub_visual .sub_visual_menu .depth > a { height: 4.5rem; line-height: 4.5rem; padding-left: 2rem; font-size: 1.4rem; }
+#mobile .container .sub_visual .sub_visual_menu .depth > a:before { top: 2.1rem; right: 2rem; border-left: .35rem solid transparent; border-right: .35rem solid transparent; }
+#mobile .container .sub_visual .sub_visual_menu .depth1 > a:before { border-top: .35rem solid #777; }
+#mobile .container .sub_visual .sub_visual_menu .depth2 > a:before { border-top: .35rem solid #fff; }
+#mobile .container .sub_visual .sub_visual_menu .depth .drop_box { padding: 0 0 0 2rem; }
+#mobile .container .sub_visual .sub_visual_menu .depth.open .drop_box { padding: 1rem 0 1rem 2rem; }
+#mobile .container .sub_visual .sub_visual_menu .depth .drop_box li a { padding: .7rem 0; font-size: 1.3rem; }
+
+/* footer */
+#mobile .footer { height: auto!important; }
+#mobile .footer .inner { display: block; height: auto!important; padding: 0 2rem; }
+#mobile .footer .inner > div { width: 100%; }
+#mobile .footer .sec_tit { font-size: 3.5rem; padding-top: 6rem; }
+#mobile .footer .sec_tit > span { color: #005eb8; }
+#mobile .footer .sec_tit > span::after { content:''; display: block; width: 12.25rem; height: .4rem; background-color: #005eb8; transform: skew(-40deg); transition: width ease-in-out .5s; }
+#mobile .footer .family_site { margin-top: 5rem; margin-bottom: 7rem; }
+#mobile .footer .family_site .site_selected { font-size: 1.4rem; width: 11rem; }
+#mobile .footer .family_site .site_selected::after { border-top: .35rem solid #fff; border-left: .35rem solid transparent; border-right: .35rem solid transparent; } 
+#mobile .footer .family_site .site_list { width: 11rem; top: 2rem; }
+#mobile .footer .family_site.open .site_list { padding: 1rem; }
+#mobile .footer .family_site .site_list li a { font-size: 1.4rem; }
+#mobile .footer .footer_wrap { height: auto; padding: 5rem 0; }
+#mobile .footer .footer_wrap ul { width: 100%; display: block; padding: 0 2rem; text-align: center; }
+#mobile .footer .footer_wrap ul li { position: relative; display: inline-block; }
+#mobile .footer .footer_wrap ul li:not(:last-child)::after { height: 1rem; margin: 0 1.7rem;}
+#mobile .footer .footer_wrap ul li a { padding: 0; font-size: 1.3rem; }
+#mobile .footer .footer_wrap p { margin-top: 2.2rem; font-size: 1.2rem; }
+
+
+
+
+/* ========================================= 메인 ========================================== */
+#mobile #rightnavi { display: none; }
+#mobile #main #fullpage .section01 .swiper .sec01_controller { left: 0; right: 0; bottom: 4rem; margin: auto; width: calc(100% - 7.4rem); height: 4rem; }
+#mobile #main #fullpage .section01 .swiper .sec01_controller .swiper-pagination-sec01 { width: calc(100% - 6rem); }
+#mobile #main #fullpage .section01 .swiper .sec01_controller .swiper-pagination-sec01:after { width: calc(100% - 10rem); }
+#mobile #main #fullpage .section01 .swiper .sec01_controller .swiper-pagination-sec01 .swiper-pagination-bullet { width: .9rem; height: .9rem; padding: 2rem; }
+#mobile #main #fullpage .section01 .swiper .sec01_controller .swiper-pagination-sec01 .swiper-pagination-bullet:after { width: .9rem; height: .9rem; }
+#mobile #main #fullpage .section01 .swiper .sec01_controller .bullet_hr { left: 3rem; width: 4rem; height: 4rem; }
+#mobile #main #fullpage .section01 .swiper .sec01_controller .swiper-button { width: 1.6rem; height: 3rem; }
+#mobile #main #fullpage .section01 .swiper .sec01_controller .swiper-button-next { content: url(../images/main/sec01_controller_arrowNext_m.png); }
+#mobile #main #fullpage .section01 .swiper .sec01_controller .swiper-button-prev { content: url(../images/main/sec01_controller_arrowPrev_m.png); }
+#mobile #main #fullpage .section01 .swiper-slide h2 { font-size: 3.8rem; }
+#mobile #main #fullpage .section01 .clip-wrap { width: 100%; height: 100%; position: absolute; z-index: 9; background: #fff; }
+#mobile #main #fullpage .section01 .clip-css { width: 33.4rem; height: 32.8rem; transition: object-fit ease .3s; object-fit: cover; }
+#mobile #main #fullpage .section01.ani .clip-css { animation: intro_mobile 0s alternate; width: 100%; height: 100%; }
+#main #fullpage .section01.active .clip-css { transform: translateY(0); }
+
+
+
+
+
+
+#mobile section .sec_tit { font-size: 3.5rem; }
+#mobile section .sec_tit::before { width: 4.8rem; height: .4rem; }
+#mobile #main #fullpage .section06 {border: 1px solid green; }
+#mobile #main #fullpage .section06 .inner { flex-direction: column; }
+#mobile #main #fullpage .section06 .left { background: #f9f9f9; width: 100%; padding: 6rem 2rem 5rem; }
+#mobile #main #fullpage .section06 .left .sub_tit { font-size: 2rem; line-height: 1.6; margin: 1rem 0 3rem; }
+#mobile #main #fullpage .section06 .left .viewmore { font-size: 1.2rem; width: 10.2rem; }
+#mobile #main #fullpage .section06 .left .viewmore::after { width: 100%; }
+#main #fullpage .section06 .left .viewmore > span { opacity: 1; }
+#main #fullpage .section06 .left ul { width: 26rem; margin-top: 4rem; }
+#main #fullpage .section06 .left ul .icon img { width: 6rem; }
+#main #fullpage .section06 .left ul li .pg_name { font-size: 1.3rem; }
+#main #fullpage .section06 .right { width: 100%; }
+
+
+
+
+/* =========================================== 서브 ======================================== */
+#mobile .civil_engineer .sub_visual {  background-image: url(../images/business/business_bg_m.png); background-size: cover; }
+#mobile .civil_engineer .title_area { padding: 6rem 2rem 7rem; text-align: center; }
+#mobile .civil_engineer .title_area .sec_tit { font-size: 3.5rem; }
+#mobile .civil_engineer .title_area .sub_tit { font-size: 2.2rem; padding: 3rem 0 1rem; line-height: 1.36; }
+#mobile .civil_engineer .title_area .sub_tit > b {  font-size: 2.3rem; }
+#mobile .civil_engineer .title_area .sub_txt { font-size: 1.5rem; line-height: 1.86; }
+#mobile .civil_engineer .title_area .download_btn { width: 17.5rem; font-size: 1.3rem; margin-top: 4.5rem;  }
+#mobile .civil_engineer .title_area .download_btn > i { width: 1.45rem; height: 1.5rem; background: url(../images/common/icon_download.png) no-repeat; background-size: contain; margin-left: 2.1rem; }
+#mobile .civil_engineer .title_area .download_btn::after { margin-top: 1.5rem; }
+#mobile .civil_engineer .tab_box { padding: 3rem 0; overflow-x: auto; }
+@media screen and (max-width:638px) {
+    #mobile .civil_engineer .tab_box ul { width: fit-content; padding-right: 2rem; }
+}
+#mobile .civil_engineer .tab_box ul li { height: 4.5rem; width: 12rem; }
+#mobile .civil_engineer .tab_box ul li.on { box-shadow: 0px 0px 16px 4px rgb(34 34 34 / 20%); }
+#mobile .civil_engineer .tab_box ul li a { font-size: 1.35rem; }
+
+#mobile .civil_engineer .outline .section { padding: 5rem 0; }
+#mobile .civil_engineer .outline .section01 { padding-top: 3rem; }
+#mobile .civil_engineer .outline .section .inner { padding: 0; }
+#mobile .civil_engineer .outline .section .swiper,
+#mobile .civil_engineer .outline .section .swiper-slide { width: 100%; }
+#mobile .civil_engineer .outline .section .swiper { box-shadow: 4px 6px 15px 0px rgba(79, 79, 79, 0.5); }
+#mobile .civil_engineer .outline .section .tit { font-size: 2.4rem; padding: 3rem 0 1rem; }
+#mobile .civil_engineer .outline .section p { flex-direction: column; }
+#mobile .civil_engineer .outline .section p > span { font-size: 1.5rem; line-height: 1.73; }
+#mobile .civil_engineer .outline .section p .btn { width: 21.1rem; height: 4.5rem; margin-top: 3.5rem; font-size: 1.3rem; padding: 0 3rem 0 2rem; }
+#mobile .civil_engineer .outline .section p .btn > i { width: 1.5rem; margin-left: 3.7rem; }
+#mobile .civil_engineer .outline .section .swiper .swiper-nav { width: 15.5rem; bottom: 1.5rem; right: 2rem; align-items: center!important; }
+#mobile .civil_engineer .outline .section .swiper .swiper-nav > div { font-size: 1.05rem; }
+#mobile .civil_engineer .outline .section .swiper .swiper-nav > div i { width: .65rem; height: 1.05rem; display: inline-block; }
+#mobile .civil_engineer .outline .section .swiper .swiper-nav > div:first-of-type i { margin: 0 1.5rem 0 0; background: url(../images/business/bus03_outline_arrow_l.png) no-repeat 50% 50%; background-size: contain; }
+#mobile .civil_engineer .outline .section .swiper .swiper-nav > div:last-of-type i { margin: 0 0 0 1.5rem; background: url(../images/business/bus03_outline_arrow_r.png) no-repeat 50% 50%; background-size: contain; }
+#mobile .civil_engineer .outline .section .swiper .swiper-nav > div:first-of-type::after { height: 1rem; margin-left: 1rem; }
+
+/* 사업실적 리스트 */
+#mobile .civil_engineer .business_lists ul > li { width: 100%; margin-bottom: 5rem; }
+#mobile .civil_engineer .business_lists .list_img .list_hover .name { font-size: 2rem; }
+#mobile .civil_engineer .business_lists .list_img .list_hover .name::before { height: .45rem; margin: 0 auto 3.5rem; }
+#mobile .civil_engineer .business_lists ul > li:hover .list_img .list_hover .name::before { width: 5rem; }
+#mobile .civil_engineer .business_lists .list_img .list_hover .date { font-size: 1.6rem; }
+#mobile .civil_engineer .business_lists .view_more { width: 13.25rem; height: 3.8rem; line-height: 3.8rem; border-radius: 1.875rem; font-size: 1.2rem; padding: 0 1.8rem; margin: 3.5rem auto 0; }
+#mobile .civil_engineer .business_lists .view_more::after { width: 1rem; height: 1rem; background-size: contain; margin-left: 1.5rem; vertical-align: initial; }
+#mobile .civil_engineer .business_lists .list_cont .name { font-size: 1.7rem; padding: 2rem 0 .8rem; }
+#mobile .civil_engineer .business_lists .list_cont .date { font-size: 1.4rem; }
+#mobile .civil_engineer .business_lists .list_more { max-width: 22.2rem; width: 100%; height: 5rem; line-height: 5rem; border-radius: 2.5rem; font-size: 1.5rem; padding-left: 4rem; margin: 0 auto 10rem; }
+#mobile .civil_engineer .business_lists .list_more::after { width: 1.6rem; height: 1.6rem; background-size: contain; right: 3rem; }
+
+/* 사업실적 리스트 팝업 */
+#mobile .card_popup .popup_inner { width: calc(100% - 2rem); }
+#mobile .card_popup .popup_inner .pop_close { width: 5.25rem; height: 5.2rem; top: -3rem; left: 50%; right: initial; transform: translate(-50%,-100%); }
+#mobile .card_popup .popup_inner .pop_cont { max-width: 100%; width: 100%; flex-direction: column; height: 125vw; overflow-y: scroll; }
+#mobile .card_popup .popup_inner .pop_cont .inner_box { width: 100%; height: fit-content; min-height: 125vw; padding: 1rem; }
+#mobile .card_popup .popup_inner .pop_cont .inner_box .inner_slider .list img { width: 100%; object-fit: contain; }
+#mobile .card_popup .popup_inner .pop_cont .txt_box { width: 100%; padding: 3rem 1rem 4rem 2rem; }
+#mobile .card_popup .popup_inner .pop_cont .txt_box .card_tit { font-size: 2.5rem; margin-bottom: 1rem; }
+#mobile .card_popup .popup_inner .pop_cont .txt_box .card_tit:before { width: 4.8rem; height: .4rem; margin-bottom: 1.8rem; }
+#mobile .card_popup .popup_inner .pop_cont .txt_box .card_des { font-size: 1.3rem; line-height: 1.69; height: 10.8rem; overflow-y: auto; }
+#mobile .card_popup .popup_inner .pop_cont .txt_box .card_mark { flex-wrap: wrap; padding: 3rem 0; }
+#mobile .card_popup .popup_inner .pop_cont .txt_box .card_mark li { width: 50%; }
+#mobile .card_popup .popup_inner .pop_cont .txt_box .card_mark li:nth-child(n+1):nth-child(-n+2) { margin-bottom: 2.5rem; }
+#mobile .card_popup .popup_inner .pop_cont .txt_box .card_tb th { font-size: 1.25rem; }
+#mobile .card_popup .popup_inner .pop_cont .txt_box .card_tb td { font-size: 1.25rem;  line-height: 1.48; padding: 1rem 0 1rem 2rem; }
+#mobile .card_popup .popup_inner .pop_cont .inner_nav { width: calc(100% - 6rem); margin: 3rem auto 0; padding-bottom: 4rem; }
+#mobile .card_popup .popup_inner .pop_cont .inner_nav .arrow { font-size: 1.2rem; }
+#mobile .card_popup .popup_inner .pop_cont .inner_nav .arrow:after { width: .8rem; height: .8rem; }
+#mobile .card_popup .popup_inner .pop_cont .inner_nav .counter_slider { font-size: 1.4rem; }
+
+
+@keyframes intro_mobile {
+    0% {
+        -webkit-clip-path: polygon(0% 75%, 25% 0%, 100% 25%, 75% 100%); 
+        clip-path: polygon(0% 75%, 25% 0%, 100% 25%, 75% 100%);
+        width: 33.4rem; 
+        height: 32.8rem;
+        transform: translateY(5%);
+    }
+    40% {
+        -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+        clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+        width: 33.4rem; 
+        height: 32.8rem;
+        transform: translateY(3%);
+    }
+    60% {
+        -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+        clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+        width: 33.4rem; 
+        height: 32.8rem;
+        transform: translateY(3%);
+    }
+    100% {
+        -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+        clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+        width: 100%;
+        height: 100%;
+        transform: translateY(0);
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width:1680px) {
+    .civil_engineer .section .section_nav { left: 2rem; }
+}
+
+@media screen and (max-width:1440px) {
+    #sub .container .inner { padding: 0 5rem; }
+    .container .sub_visual h1 { left: 5rem; }
+    .footer .inner { padding: 19.21vw 4rem 0; }
+
+}
+
+
+/* -------------------- 모바일 -------------------- */
+@media screen and (max-width:767px) {
+    /* 공통부분 */
+    br.br_pc, br.br_t {display: none;}
+    br.br_m {display: block;}
+    html{overflow-x: auto; width: 100%;}
+    .img_pc {display: none;}
+    .img_m {display: inline-block;}
+
+
+
+
+}

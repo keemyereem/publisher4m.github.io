@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <!-- SET FILE PATH :: compatibility ie9 code -->
+   <base href="../" />
+   <!--[if IE]><script type="text/javascript">
+            // Fix for IE ignoring relative base tags.
+            (function() {
+                var baseTag = document.getElementsByTagName('base')[0];
+                baseTag.href = baseTag.href;
+            })();
+    </script><![endif]-->
+
+    <meta charset="utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+    <meta name="author" content="DoosanENC">
+    <meta name="robots" content="index, follow">
+    <meta name="title" content="두산건설">
+    <meta name="description" content="두산건설 리뉴얼 홈페이지입니다.">
+    <meta name="keywords" content="두산건설, 리뉴얼홈페이지, 포엠크리에이티브">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="두산건설" />
+    <meta property="og:description" content="두산건설 리뉴얼 홈페이지입니다." />
+    <meta property="og:site_name" content="DoosanENC">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="두산건설" />
+    <meta name="twitter:description" content="두산건설 리뉴얼 홈페이지입니다." />
+    
+    <title>두산건설</title>
+    <link rel="icon" href="images/favicon.png" sizes="32x32">
+    <link rel="canonical" href="http://dev.topes.4-m.co.kr/" />  
+
+    <!-- Library CSS -->
+    <link type="text/css" href="css/lib/jquery.swiper.min.css" rel="stylesheet">
+    <link type="text/css" href="css/lib/jquery.fullpage.css" rel="stylesheet">
+    <link type="text/css" href="css/lib/aos.css" rel="stylesheet">
+
+    <link href="//db.onlinewebfonts.com/c/aad7a027cef9752cc4ead963f89cd028?family=YD+Gothic+500" rel="stylesheet" type="text/css"/>
+    <link type="text/css" href="css/font.css" rel="stylesheet">
+    <link type="text/css" href="css/common.css" rel="stylesheet">
+    <link type="text/css" href="css/sub.css" rel="stylesheet">
+    <link type="text/css" href="css/media.css" rel="stylesheet">
+
+    <!-- Library JS -->
+    <script src="js/lib/jquery-1.12.4.min.js"></script>
+    <script src="js/lib/jquery.swiper.min.js"></script>
+    <script src="js/lib/jquery.fullPage.js"></script>
+    <script src="js/lib/jquery.easings.min.js"></script>
+    <script src="js/lib/scrolloverflow.js"></script>
+    <script src="js/lib/aos.js"></script>
+
+    <script src="js/common.js?v=1.0"></script>
+    
+
+    <!-- Initialized Include Path -->
+    <script>
+        $(document).ready( function() {
+            //html용 include
+            $(".header").load("include/header.html?v=1.0");
+            // $(".sitemap").load("include/sitemap.html");
+            $(".footer").load("include/footer.html");
+
+            // commonEvent.init();
+            mainEvent.init();
+
+        });
+    </script>
+</head>
+
+<body>
+    <!-- wrap -->
+    <div class="wrap" id="main">
+
+        <!-- header -->
+        <div class="header"></div>
+        <!-- //header -->
+
+        <!-- sitemap -->
+        <div class="sitemap"></div>
+        <!-- //sitemap -->
+
+        <div class="container">
+    
+        </div>
+
+        <!-- footer -->
+        <div class="footer"></div>
+        <!-- //footer -->
+    </div>
+</body>
+
+</html>
