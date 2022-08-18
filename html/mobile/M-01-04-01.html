@@ -62,6 +62,7 @@
 
             commonEvent.init();
             civilEngineerEvent.init();
+            mobileEvent.init();
         });
     </script>
 </head>
@@ -121,14 +122,18 @@
             </div>
 
             <div class="tab_box">
-                <div class="inner">
-                    <ul>
-                        <li class="on"><a href="javascript:;" title="개요 페이지로 이동">개요</a></li>
-                        <li><a href="javascript:;" title="철도·지하철 페이지로 이동">철도·지하철</a></li>
-                        <li><a href="javascript:;" title="고속도로 페이지로 이동">고속도로</a></li>
-                        <li><a href="javascript:;" title="도로·교량 페이지로 이동">도로·교량</a></li>
-                        <li><a href="javascript:;" title="환경·에너지·항만·수자원 페이지로 이동">환경·에너지·항만·수자원</a></li>
+                <div class="inner swiper outline_tab_swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide on"><a href="javascript:;" title="개요 페이지로 이동">개요</a></li>
+                        <li class="swiper-slide"><a href="html/mobile/M-01-04-01-01.html" title="철도·지하철 페이지로 이동">철도·지하철</a></li>
+                        <li class="swiper-slide"><a href="javascript:;" title="고속도로 페이지로 이동">고속도로</a></li>
+                        <li class="swiper-slide"><a href="javascript:;" title="도로·교량 페이지로 이동">도로·교량</a></li>
+                        <li class="swiper-slide"><a href="javascript:;" title="환경·에너지·항만·수자원 페이지로 이동">환경·에너지·항만·수자원</a></li>
                     </ul>
+                </div>
+                <div class="tab-swiper-nav">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>                                
                 </div>
             </div>
 
@@ -147,8 +152,8 @@
                                 </div>
                             </div>
                             <div class="swiper-nav">
-                                <div class="swiper-button-prev01"><i><!-- <img src="images/business/bus03_outline_arrow_l.png" alt="이전 버튼"> --></i>PREV</div>
-                                <div class="swiper-button-next01">NEXT<i><!-- <img src="images/business/bus03_outline_arrow_r.png" alt="다음 버튼"></i> --></div>                                
+                                <div class="swiper-button-prev01"><i></i>PREV</div>
+                                <div class="swiper-button-next01">NEXT<i></i></div>                                
                             </div>
                         </div>
                         <div class="tit">경부고속철도</div>
@@ -176,8 +181,8 @@
                                 </div>
                             </div>
                             <div class="swiper-nav">
-                                <div class="swiper-button-prev02"><i><!-- <img src="images/business/bus03_outline_arrow_l.png" alt="이전 버튼"> --></i>PREV</div>
-                                <div class="swiper-button-next02">NEXT<i><!-- <img src="images/business/bus03_outline_arrow_r.png" alt="다음 버튼"></i> --></div>                                
+                                <div class="swiper-button-prev02"><i></i>PREV</div>
+                                <div class="swiper-button-next02">NEXT<i></i></div>                                
                             </div>
                         </div>
                         <div class="tit">지하철 9호선 909공구</div>
@@ -205,8 +210,8 @@
                                 </div>
                             </div>
                             <div class="swiper-nav">
-                                <div class="swiper-button-prev03"><i><!-- <img src="images/business/bus03_outline_arrow_l.png" alt="이전 버튼"> --></i>PREV</div>
-                                <div class="swiper-button-next03">NEXT<i><!-- <img src="images/business/bus03_outline_arrow_r.png" alt="다음 버튼"></i> --></div>                                
+                                <div class="swiper-button-prev03"><i></i>PREV</div>
+                                <div class="swiper-button-next03">NEXT<i></i></div>                                
                             </div>
                         </div>
                         <div class="tit">강남순환도시고속도로 5공구</div>
@@ -237,8 +242,8 @@
                                 </div>
                             </div>
                             <div class="swiper-nav">
-                                <div class="swiper-button-prev04"><i><!-- <img src="images/business/bus03_outline_arrow_l.png" alt="이전 버튼"> --></i>PREV</div>
-                                <div class="swiper-button-next04">NEXT<i><!-- <img src="images/business/bus03_outline_arrow_r.png" alt="다음 버튼"></i> --></div>                                
+                                <div class="swiper-button-prev04"><i></i>PREV</div>
+                                <div class="swiper-button-next04">NEXT<i></i></div>                                
                             </div>
                         </div>
                         <div class="tit">동대구역 고가교</div>
@@ -254,31 +259,12 @@
                     </div>                
                 </section>
             </div>
-            <!-- footer -->
-            <section class="section footer">
-                <div class="inner">
-                    <div class="swiper swiper01">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="img"><img src="images/business/bus03_outline_swiper01_img01.png" alt=" 이미지"></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="img"><img src="images/business/bus03_outline_swiper01_img02.png" alt=" 이미지"></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="img"><img src="images/business/bus03_outline_swiper01_img01.png" alt=" 이미지"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tit"></div>
-                    <p>
 
-                    </p>
-                    <a href="javascript:;" class="btn"><i></i></a>
-                </div>                                
-            </section> 
         </div>
-
+        <!-- footer -->
+        <div class="footer">
+                            
+        </div> 
     </div>
 </body>
 

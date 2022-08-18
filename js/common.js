@@ -168,7 +168,7 @@ var mainEvent = {
               // after image showing, animation start
               setTimeout(() => {
                 $('.section01').addClass('ani');
-              }, 1000);
+              }, 500);
 
             } else {
               var img = new Image();
@@ -182,7 +182,7 @@ var mainEvent = {
 
               setTimeout(() => {
                 $('.section01').addClass('ani');
-              }, 1000);
+              }, 500);
             };
 
             // after animation ended, initializing object
@@ -196,7 +196,7 @@ var mainEvent = {
                 
                 setTimeout(() => {
                   $('.clip-wrap').addClass('indent');
-                }, 500);
+                }, 0);
                 
                 mainEvent.mainSwiper();
 
@@ -368,7 +368,7 @@ var mainEvent = {
         watchSlidesVisibility: true,
 
         pagination: {
-          el: '.section03 .right .swiper-pagination',
+          el: '.section03 .inner_swiper .swiper-pagination',
           clickable: 'true',
           type: 'bullets',
       
@@ -526,9 +526,7 @@ var civilEngineerEvent = {
 
   civilSwiper: () => {
     $(".civil_engineer .outline .swiper").each(function(index){
-      console.log(index);
       var idx = index +1;
-
       // 첫번째 슬라이드 2depth 스와이퍼 
       var bus03Swiper = new Swiper('.civil_engineer .outline .swiper0' + idx, {
           observer: true,
@@ -586,3 +584,51 @@ function popupbusiness(popConts) {
       popthis.fadeOut(300);
   });
 }
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////                                                        **모바일**                                                                  ///////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+var mobileEvent = {
+  init: function(){
+    this.civilTabSwiper();
+  },
+  civilTabSwiper: () => {
+    var tabSwiper = new Swiper(".civil_engineer .outline_tab_swiper", {
+      speed: 500,
+      loop: false,
+      autoplayDisableOnInteraction: false,
+      slidesPerView: 3, 
+      watchOverflow: true,
+      watchSlidesProgress: true,
+      watchSlidesVisibility: true,
+
+      navigation: {
+        nextEl: ".tab-swiper-nav .swiper-button-next",
+        prevEl: ".tab-swiper-nav .swiper-button-prev",
+      },
+
+    });
+
+    // let ww = window.innerWidth;
+
+    // responsiveSwiper();
+    // function responsiveSwiper(){
+    //   if(ww > 480){
+    //     tabSwiper.destroy();
+
+    //   }else{
+    //     tabSwiper = new Swiper(".civil_engineer .outline_tab_swiper", {
+    //       slidesPerView: 'auto',
+
+    //     });
+    //   }
+    // };
+
+    // window.addEventListener('resize', function() {
+    //   ww = window.innerWidth;
+    //   responsiveSwiper();
+    // });
+
+  },
+};

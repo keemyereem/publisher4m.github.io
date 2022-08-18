@@ -210,11 +210,11 @@ br.br_t, br.br_m {display: none;}
 .footer { background: #000; color: #fff; width: 100%; height: 100vh!important; }
 .footer .inner { display: flex; align-items: flex-start; width: 100%; max-width: 144rem; height: calc(100% - 24.3rem)!important; padding-top: 19.21vh; }
 .footer .inner > div { width: 50%; }
-.footer .sec_tit { font-size: 6.4rem; font-weight: 400; color: #fff; line-height: 1.3; font-family: 'Pretendard'; margin-top: -1rem; }
+.footer .sec_tit { font-size: 6.4rem; font-weight: 400; color: #fff!important; line-height: 1.3; font-family: 'Pretendard'; margin-top: -1rem; }
 .footer .sec_tit:before { display: none; }
 .footer .sec_tit > span { color: #fff; display: inline-block; }
 .footer .sec_tit > span.fin { color: #005eb8; transition: .3s ease-in-out .5s; }
-.footer .sec_tit > span.fin:after { width: 22rem; }
+.footer .sec_tit > span.fin:after { width: 100%; }
 .footer .sec_tit > span::after { content:''; display: block; width: 0; height: .4rem; background-color: #005eb8; transform: skew(-40deg); transition: width ease-in-out .5s; }
 .footer .family_site { position: relative; margin-top: 15rem; }
 .footer .family_site .site_selected { font-family: 'Montserrat'; font-size: 1.8rem; font-weight: 800; color: #fff; width: 15rem; display: flex; justify-content: space-between; align-items: center; }

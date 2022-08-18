@@ -40,7 +40,12 @@
     src: local(※),
     url(../font/Montserrat-ExtraBold.ttf) format('truetype');
 }
-
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    src: local(※),
+    url(../font/Montserrat-Black.ttf) format('truetype');
+}
 
 /* ------------------------------------noto sans kr----------------------------------- */
 @font-face {
