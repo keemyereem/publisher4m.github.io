@@ -59,13 +59,15 @@
     <!-- 컨텐츠 -->
     <div id="unicef_card">
         <!-- 좌우 슬라이드 -->
-        <!-- <div class="swiper horizon_slide">
+        <div class="swiper horizon_slide">
             <div class="swiper-wrapper">
                 <div class="swiper-slide slide-box slide1">
                     <div class="swipe-box">
-                        <img src="img/swipe-icon-hor.png" alt="좌우로넘겨서보세요" class="icon-hor">
-                        <img src="img/swipe-hand.png" alt="손모양" class="icon-hand hand-hor">
-                        <p><b>좌우</b>로 넘겨서 보세요</p>
+                        <div>
+                            <img src="img/swipe-icon-hor.png" alt="좌우로넘겨서보세요" class="icon-hor">
+                            <img src="img/swipe-hand.png" alt="손모양" class="icon-hand hand-hor">
+                            <p><b>좌우</b>로 넘겨서 보세요</p>
+                        </div>
                     </div>
                     <div class="s_img_wrap">
                         <img class="slide-img" src="img/slide01.png" alt="">
@@ -166,116 +168,24 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
-                <!-- 상하 슬라이드 -->
-                <div id="fullPage" class="slide-wrap">
-                    <div class="slide-box slide1">
-                        <div class="swipe-box">
-                            <img src="img/swipe-icon-ver.png" alt="상하로넘겨서보세요" class="icon-ver">
-                            <img src="img/swipe-hand.png" alt="손모양" class="icon-hand hand-ver">
-                            <p><b>상하</b>로 넘겨서 보세요</p>
-                        </div>
-                        <div class="s_img_wrap">
-                            <img class="slide-img" src="img/slide01.png" alt="">
-                            <div class="info">
-                                <div class="paging-num"><span>1</span> /10</div>
-                            </div>
-                            <div class="logo"></div>
-                        </div>
-                        <div class="con-wrap scroll">
-                            <div class="txt-box scroll">
-                                <div class="scroll_wrap">
-                                    <p class="name-tit">
-                                        <span class="name">홍길동 후원자</span>님,
-                                    </p>
-                                    <p>
-                                        UNICEF TEAM 캠페인에 참여해주셔서 감사합니다.<br>
-                                        후원금이 국내사업에 어떻게 사용되는지 <br>
-                                        알려드릴게요.
-                                    </p>
-                                </div>
-                                <div class="btn_wrap">
-                                    <a href="javascript:;" class="solid-btn mobile" target="_blank">자세히 보기</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="slide-box slide2">
-                        <div class="s_img_wrap">
-                            <img class="slide-img" src="img/slide01.png" alt="">
-                            <div class="info">
-                                <div class="paging-num"><span>2</span> /10</div>
-                            </div>
-                            <div class="logo"></div>
-                        </div>
-                        <div class="con-wrap">
-                            <div class="txt-box">
-                                <p class="name-tit">
-                                    <span class="name">홍길동 후원자</span>님,
-                                </p>
-                                <p>
-                                    UNICEF TEAM 캠페인에 참여해주셔서 감사합니다.<br>
-                                    후원금이 국내사업에 어떻게 사용되는지 <br>
-                                    알려드릴게요.
-                                </p>
-                                <div class="btn_wrap">
-                                    <a href="javascript:;" class="solid-btn mobile" target="_blank">자세히 보기</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="slide-box slide3">
-                        <div class="s_img_wrap">
-                            <img class="slide-img" src="img/slide01.png" alt="">
-                            <div class="info">
-                                <div class="paging-num"><span>3</span> /10</div>
-                            </div>
-                            <div class="logo"></div>
-                        </div>
-                        <div class="con-wrap">
-                            <div class="txt-box">
-                                <p class="name-tit">
-                                    <span class="name">홍길동 후원자</span>님,
-                                </p>
-                                <p>
-                                    UNICEF TEAM 캠페인에 참여해주셔서 감사합니다.<br>
-                                    후원금이 국내사업에 어떻게 사용되는지 <br>
-                                    알려드릴게요.
-                                </p>
-        
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="slide-box slide4">
-                        <div class="s_img_wrap">
-                            <img class="slide-img" src="img/slide01.png" alt="">
-                            <div class="info">
-                                <div class="paging-num"><span>4</span> /10</div>
-                            </div>
-                            <div class="logo"></div>
-                        </div>
-                        <div class="con-wrap">
-                            <div class="txt-box">
-                                <p class="name-tit">
-                                    <span class="name">홍길동 후원자</span>님,
-                                </p>
-                                <p>
-                                    UNICEF TEAM 캠페인에 참여해주셔서 감사합니다.<br>
-                                    후원금이 국내사업에 어떻게 사용되는지 <br>
-                                    알려드릴게요.
-                                </p>
-                                <div class="btn_wrap">
-                                    <a href="javascript:;" class="solid-btn mobile" target="_blank">자세히 보기</a>
-                                    <a href="javascript:;" class="solid-btn mobile" target="_blank">자세히 보기</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
+        <script>
+        $(document).ready(function(){
+
+            swiper = new Swiper(".horizon_slide", {
+                speed: 500,
+                loop: true,
+                autoplayDisableOnInteraction: false,
+                slidesPerView: 1, 
+                initialSlide: 0,
+                watchOverflow: true,
+                observer: true,
+                observeParents: true,
+
+            });
+        })
+        </script>
     </div>
     <!-- 컨텐츠 -->
     <!-- 본문 -->

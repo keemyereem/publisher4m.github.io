@@ -56,9 +56,11 @@
         <div id="fullPage" class="slide-wrap">
                 <div class="slide-box slide1">
                     <div class="swipe-box">
-                        <img src="img/swipe-icon-ver.png" alt="상하로넘겨서보세요" class="icon-ver">
-                        <img src="img/swipe-hand.png" alt="손모양" class="icon-hand hand-ver">
-                        <p><b>상하</b>로 넘겨서 보세요</p>
+                        <div>
+                            <img src="img/swipe-icon-ver.png" alt="상하로넘겨서보세요" class="icon-ver">
+                            <img src="img/swipe-hand.png" alt="손모양" class="icon-hand hand-ver">
+                            <p><b>상하</b>로 넘겨서 보세요</p>
+                        </div>
                     </div>
                     <div class="s_img_wrap">
                         <img class="slide-img" src="img/slide01.png" alt="">
@@ -160,6 +162,38 @@
                     </div>
                 </div>
         </div>
+
+        <script>
+$(document).ready(function(){
+
+    $('#fullPage').fullpage({
+        sectionSelector: '.slide-box',
+        fitToSection: true,
+        scrollOverflow: true,
+        dragAndMove: true,
+        scrollHorizontally: true,
+        continuousVertical: true,
+    });
+
+
+    $('.swipe-box').addClass('on');
+
+    if ($('.swipe-box').hasClass('on')) {
+        setTimeout(() => {
+            $('.icon-hand').addClass('on');
+        }, 0)
+        setTimeout(() => {
+            $('.swipe-box').removeClass('on');
+            $('.icon-hand').removeClass('on');
+        }, 2000)
+    }
+
+    $('.swipe-box').on('click', () => {
+        $('.swipe-box').removeClass('on');
+    })
+
+})
+        </script>
         
 
     </div>
