@@ -16,6 +16,7 @@ $(document).ready(function(){
         scrollHorizontally: true,
         continuousVertical: true,
 
+
     });
 
 
@@ -23,13 +24,30 @@ $(document).ready(function(){
 
     if ($('.swipe-box').hasClass('on')) {
         setTimeout(() => {
+            $('.icon-hand').addClass('on');
+        }, 0)
+        setTimeout(() => {
             $('.swipe-box').removeClass('on');
-        }, 3000)
+            $('.icon-hand').removeClass('on');
+        }, 2000)
     }
 
     $('.swipe-box').on('click', () => {
         $('.swipe-box').removeClass('on');
     })
+
+    swiper = new Swiper(".horizon_slide", {
+        speed: 500,
+        loop: true,
+        autoplayDisableOnInteraction: false,
+        slidesPerView: 1, 
+        initialSlide: 0,
+        watchOverflow: true,
+        observer: true,
+        observeParents: true,
+  
+    });
+
 
 
 })
