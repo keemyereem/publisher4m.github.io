@@ -54,18 +54,21 @@ a:visited {color: #333;}
 }
 
 #unicef_card .swipe-box {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 99;
     text-align: center;
     background: rgba(0,0,0,.7);
     opacity: 0;
-    display: none;
+    /* display: none; */
     transition: all ease .7s;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center; */
 }
 
 
@@ -126,6 +129,12 @@ a:visited {color: #333;}
 
 #unicef_card .slide-img {
     width: 100%;
+}
+
+#unicef_card .swipe-box div {
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 #unicef_card .swipe-box img.icon-ver {
