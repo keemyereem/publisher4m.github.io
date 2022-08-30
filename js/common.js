@@ -8,17 +8,6 @@
 // ------------------------------------------------------------------------------------------------------------------------------------------ //
 $(document).ready(function(){
 
-    $('#fullPage').fullpage({
-        sectionSelector: '.slide-box',
-        fitToSection: true,
-        scrollOverflow: true,
-        dragAndMove: true,
-        scrollHorizontally: true,
-        continuousVertical: true,
-
-
-    });
-
 
     $('.swipe-box').addClass('on');
 
@@ -35,18 +24,6 @@ $(document).ready(function(){
     $('.swipe-box').on('click', () => {
         $('.swipe-box').removeClass('on');
     })
-
-    swiper = new Swiper(".horizon_slide", {
-        speed: 500,
-        loop: true,
-        autoplayDisableOnInteraction: false,
-        slidesPerView: 1, 
-        initialSlide: 0,
-        watchOverflow: true,
-        observer: true,
-        observeParents: true,
-  
-    });
 
 
 
