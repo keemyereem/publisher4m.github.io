@@ -1,120 +1,346 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Swiper demo</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
-    />
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
+<html class="nojs html css_verticalspacer" lang="ko-KR">
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+<meta name="generator" content="2017.0.2.363"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<!-- 개별화 페이지는 검색안되도록 처리 -->
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="copyright" content="Unicef" />
 
-    <!-- Demo styles -->
-    <style>
-      html,
-      body {
-        position: relative;
-        height: 100%;
-      }
+<meta name="author" content="Unicef">
+<meta name="robots" content="index, follow">
+<meta name="title" content="카드 개인화 서비스 | 유니세프">
+<meta name="description" content="카드 개인화 서비스 | 유니세프">
+<meta name="keywords" content="카드 개인화 서비스 | 유니세프">
+<meta property="og:type" content="website" />
+<meta property="og:title" content="카드 개인화 서비스 | 유니세프" />
+<meta property="og:description" content="카드 개인화 서비스 | 유니세프" />
+<meta property="og:site_name" content="Unicef">
 
-      body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
-      }
 
-      .swiper {
-        width: 100%;
-        height: 100%;
+
+<title>카드 개인화 서비스 | 유니세프</title>
+
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="font.css">
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- inner styles -->
+<style>
+  /* common */
+  html, body, div, p, span, strong, b, em, iframe, pre,
+  h1, h2, h3, h4, h5, h6,
+  img, dl, dt, dd,
+  fieldset, form, legend, label,
+  table, caption, thead, tbody, tfoot, tr, th, td,
+  ul, ol, li, a, input, select, textarea {margin: 0;padding: 0; border: 0 none; }
+
+  html, body { position: relative; height: 100%; }
+  body {font-family: 'NanumSquare',sans-serif; font-weight: 400; line-height: 1; font-size: 16px; }
+/* hide scrollbar but allow scrolling */
+
+  ul, ol, li {list-style: none;}
+  em, address {font-style: normal;}
+  img {border: 0 none; font-size: 0;line-height: 0;}
+  sup {position: relative;top: 2px;font-size: 11px;line-height: 100%;}
+
+  table {border-collapse: collapse; border-spacing:0; }
+  caption {overflow: hidden;width: 0;height: 0;font-size: 0; line-height: 0;}
+  th, td { vertical-align: middle;/* white-space: nowrap */}
+
+  a {color: #333; text-decoration: none; line-height: 1;}
+  a:hover, a:focus, a:active {text-decoration: underline;}
+  a:visited {color: #333;}
+  *, html {box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+  *, *:before, *:after {box-sizing: border-box;-webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+
+  * {-webkit-text-size-adjust:none; -webkit-tap-highlight-color:transparent;}
+  *::-webkit-scrollbar {background-color:#fff; width:5px; height:8px; border-radius:8px; display: none; }
+  *::-webkit-scrollbar-thumb {background:#eee; border-radius:15px;}
+  *::-webkit-scrollbar-track {background:transparent; border-radius:8px;}
+  *:hover::-webkit-scrollbar-thumb {background:#07b5ff;}
+  *::-webkit-scrollbar-button,
+  *::-webkit-scrollbar-corner {display:none !important;}
+
+  /* swiper */
+  .swiper { width:100%; height:100%; }
+  .swiper-slide { overflow-y: auto; }
+  .swipe-box { width:100vw; max-width:600px; height:100vh; position:fixed; top:0; left:0; right: 0; bottom: 0; margin: auto; z-index:99; text-align:center; background:rgba(0,0,0,.7); opacity:0; transition:all ease .7s; }
+  .swipe-box.on { opacity:1; }
+  .swipe-box div { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); display: none; }
+  .swipe-box img.icon-ver { width:27px; margin:0 auto 35px; }
+  .swipe-box img.icon-hor { width:114px; margin:0 auto 70px; }
+  .swipe-box img.icon-hand { position:absolute; left:50%; top:50%; width:53px; }
+  .swipe-box img.hand-ver { margin-left:21px; margin-top:-38px; }
+  .swipe-box.on img.hand-ver.on { animation:mouseUp .7s .5s alternate; }
+  .swipe-box img.hand-hor { margin-top:-45px; }
+  .swipe-box.on img.hand-hor.on { animation:mouseRight .7s .5s alternate; }
+  .swipe-box p { font-size:16px; letter-spacing:-.03px; color:#fff; position:relative; width:fit-content; margin:0 auto; }
+  .swipe-box p::before { content:''; display:block; width:25px; height:23px; background:url(../img/swipe-tip.png) 0 0/contain no-repeat; position:absolute; top:-15px; left:-25px; }
+  .swipe-box p b { color:#07b5ff; font-weight:700; }
+
+  /* card */
+  #unicef_card { max-width:600px; width:100%; margin:0 auto; height: 100%; position: relative; }
+  #unicef_card .slide-img { display:block; width:100%; height:fit-content; object-fit:cover; }
+  #unicef_card p { word-break:keep-all; font-size:16px; line-height:1.5; color:#555; letter-spacing:-.32px; }
+  #unicef_card .s_img_wrap { position:relative; height:fit-content; border-bottom:3px solid #07b5ff; }
+  #unicef_card .s_img_wrap .slide-img { margin:0; padding:0; font-size:0; line-height:0; border:0; }
+  #unicef_card .name-tit { font-size:21px; font-weight:700; }
+  #unicef_card .name { font-weight:800; color:#07b5ff; }
+  #unicef_card .con-wrap { width: 100%; }
+  #unicef_card .info { position:absolute; bottom:12px; z-index:21; width:100%; }
+  #unicef_card .paging-num { background:rgba(0,0,0,.5); width:fit-content; height:20px; border-radius:19px; padding:3px 6px; color:#999; text-align:center; font-family:'Montserrat'; font-weight:400; margin:0 auto; }
+  #unicef_card .paging-num span { font-family:'Montserrat'; font-weight:600; color:#fff; }
+  #unicef_card .logo { background:url(../img/unicef-logo.png) no-repeat center/contain; width:87px; height:11px; opacity:1 !important; position:absolute; top:15px; left:20px; }
+  #unicef_card .txt-box { clear:both; position:relative; z-index:9; background:#fff; padding:25px 20px; }
+  #unicef_card .txt-box .txt-bg { color:#07b5ff; font-weight:700; font-family:'NanumSquare'; background:#f0faff; padding:15px; line-height:1.56; margin:18px 0; transform:skew(-.03deg); }
+  #unicef_card .btn_wrap { width:100%; margin-top:25px; }
+  #unicef_card .btn_wrap a { display:block; width:100%; height:43px; line-height:43px; text-align:center; color:#fff; font-size:16px; font-weight:700; background:#07b5ff; }
+  #unicef_card .btn_wrap a+a { margin-top:10px; }
+
+  /* animation */
+  @keyframes fadeout{
+    0%,70% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes mouseUp{
+    0% {
+      opacity:0;
+      transform:translateY(0);
+    }
+    70% {
+      opacity:1;
+      transform:translateY(-60px);
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  @keyframes mouseRight{
+    0% {
+      opacity:0;
+      transform:translateX(0);
+    }
+    70%{
+      opacity:1;
+      transform:translateX(60px);
+    }
+    100%{
+      opacity:1;
+    }
+  }
+</style>
+</head>
+
+<body class="">
+  <div id="unicef_card">
+
+    <div class="swipe-box">
+        <div class="popup_horizontal">
+            <img src="img/swipe-icon-hor.png" alt="좌우로넘겨서보세요" class="icon-hor">
+            <img src="img/swipe-hand.png" alt="손모양" class="icon-hand hand-hor">
+            <p><b>좌우</b>로 넘겨서 보세요</p>
+        </div>
         
-      }
+        <div class="popup_vertical">
+          <img src="img/swipe-icon-ver.png" alt="상하로넘겨서보세요" class="icon-ver">
+          <img src="img/swipe-hand.png" alt="손모양" class="icon-hand hand-ver">
+          <p><b>상하</b>로 넘겨서 보세요</p>
+      </div>
+    </div>
 
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      .swiper-slide {
-        width: 100%;
-        overflow-y: auto;
-        
-      }
-      .ddd { border: 1px solid red; width: 100%; height: 120vh; line-height: 120vh; }
-
-      .swiper-slide:nth-child(2n) {
-        height: 100vh;
-      }
-
-      .swiper-slide:nth-child(3n) {
-        width: 40%;
-      }
-    </style>
-  </head>
-
-  <body>
     <!-- Swiper -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
+
         <div class="swiper-slide">
-            <div class="ddd">
-                Slide 2
-            </div>
+          <div class="s_img_wrap">
+              <img class="slide-img" src="img/slide01.png" alt="">
+              <div class="info">
+                  <div class="paging-num"><span>1</span> /10</div>
+              </div>
+              <div class="logo"></div>
+          </div>
+          <div class="con-wrap scroll">
+              <div class="txt-box scroll">
+                  <div class="scroll_wrap">
+                      <p class="name-tit">
+                          <span class="name">홍길동 후원자</span>님,
+                      </p>
+                      <p>
+                          UNICEF TEAM 캠페인에 참여해주셔서 감사합니다.
+                      </p>
+                      <div class="txt-bg">
+                          1. 즐거운 후원경험<br>
+                          2. 후원금이 국내사업에 어떻게 사용되는지
+                      </div>
+                      <p>알려드릴게요.</p>
+                  </div>
+              </div>
+          </div>
         </div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
+
+        <div class="swiper-slide slide-box slide2">
+          <div class="s_img_wrap">
+              <img class="slide-img" src="img/slide01.png" alt="">
+              <div class="info">
+                  <div class="paging-num"><span>2</span> /10</div>
+              </div>
+              <div class="logo"></div>
+          </div>
+          <div class="con-wrap">
+              <div class="txt-box">
+                  <p class="name-tit">
+                      <span class="name">홍길동 후원자</span>님,
+                  </p>
+                  <p>
+                      UNICEF TEAM 캠페인에 참여해주셔서 감사합니다.<br>
+                  </p>
+                  <div class="btn_wrap">
+                      <a href="javascript:;" class="solid-btn mobile" target="_blank">자세히 보기</a>
+                      <a href="javascript:;" class="solid-btn mobile" target="_blank">자세히 보기</a>
+                  </div>
+              </div>
+          </div>
       </div>
-      <div class="swiper-pagination"></div>
+
+      <div class="swiper-slide slide-box slide3">
+          <div class="s_img_wrap">
+              <img class="slide-img" src="img/slide01.png" alt="">
+              <div class="info">
+                  <div class="paging-num"><span>3</span> /10</div>
+              </div>
+              <div class="logo"></div>
+          </div>
+          <div class="con-wrap">
+              <div class="txt-box">
+                  <p class="name-tit">
+                      <span class="name">홍길동 후원자</span>님,
+                  </p>
+                  <p>
+                      UNICEF TEAM 캠페인에 참여해주셔서 감사합니다.<br>
+                      후원금이 국내사업에 어떻게 사용되는지 <br>
+                      알려드릴게요.
+                  </p>
+              </div>
+          </div>
+      </div>
+
+      <div class="swiper-slide slide-box slide4">
+          <div class="s_img_wrap">
+              <img class="slide-img" src="img/slide01.png" alt="">
+              <div class="info">
+                  <div class="paging-num"><span>4</span> /10</div>
+              </div>
+              <div class="logo"></div>
+          </div>
+          <div class="con-wrap">
+              <div class="txt-box">
+                  <p class="name-tit">
+                      <span class="name">홍길동 후원자</span>님,
+                  </p>
+                  <p>
+                      UNICEF TEAM 캠페인에 참여해주셔서 감사합니다.<br>
+                      후원금이 국내사업에 어떻게 사용되는지 <br>
+                      알려드릴게요.
+                  </p>
+                  <div class="btn_wrap">
+                      <a href="javascript:;" class="solid-btn mobile" target="_blank">자세히 보기</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+
     </div>
+  </div>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    
+    // 인트로 팝업 트리거
+    $(document).ready(function(){
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: "auto",
-        direction: "vertical",
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
-  </body>
+      $('.swipe-box').addClass('on');
+
+      if ($('.swipe-box').hasClass('on')) {
+          setTimeout(() => {
+              $('.icon-hand').addClass('on');
+          }, 0)
+          setTimeout(() => {
+              $('.swipe-box').removeClass('on');
+              $('.icon-hand').removeClass('on');
+          }, 2000)
+          setTimeout(() => {
+            $('.swipe-box').hide();
+          }, 2500)
+      }
+
+      $('.swipe-box').on('click', () => {
+          $('.swipe-box').removeClass('on');
+          setTimeout(() => {
+            $('.swipe-box').hide();
+          }, 500)
+      })
+    })
+
+    // body 태그 클래스에 vertical이 주어질 경우, 세로 스와이프/ 인트로 팝업 조정
+    let options = {};
+    if ($("body").hasClass('vertical')) {
+      $('.popup_vertical').show();
+      options = {
+        direction: 'vertical',
+        loop: true,
+        spaceBetween: 0,
+      }
+    } else {
+      $('.popup_horizontal').show();
+      options = {
+        direction: 'horizontal',
+        loop: true,
+        spaceBetween: 0,
+      }
+    }
+    var swiper = new Swiper('.mySwiper', options);
+
+    // 터치 스와이프 스크롤 우선 적용 후 슬라이드 넘김
+    var startScroll, touchStart, touchCurrent;
+  
+    swiper.slides.on('touchstart', function (e) {
+        startScroll = this.scrollTop;
+        touchStart = e.targetTouches[0].pageY;
+    }, true);
+
+    swiper.slides.on('touchmove', function (e) {
+        touchCurrent = e.targetTouches[0].pageY;
+        var touchesDiff = touchCurrent - touchStart;
+        var slide = this;
+        var onlyScrolling = 
+                ( slide.scrollHeight > slide.offsetHeight ) && //allow only when slide is scrollable
+                (
+                    ( touchesDiff < 0 && startScroll === 0 ) || //start from top edge to scroll bottom
+                    ( touchesDiff > 0 && startScroll === ( slide.scrollHeight - slide.offsetHeight ) ) || //start from bottom edge to scroll top
+                    ( startScroll > 0 && startScroll < ( slide.scrollHeight - slide.offsetHeight ) ) //start from the middle
+                );
+        if (onlyScrolling) {
+            e.stopPropagation();
+        }
+    }, true);
+    
+      
+  </script>
+</body>
 </html>
