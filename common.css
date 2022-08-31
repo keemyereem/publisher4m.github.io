@@ -127,6 +127,8 @@ a:visited {color: #333;}
 .swipe-box p { font-size:16px; letter-spacing:-.03px; color:#fff; position:relative; width:fit-content; margin:0 auto; }
 .swipe-box p::before { content:''; display:block; width:25px; height:23px; background:url(../img/swipe-tip.png) 0 0/contain no-repeat; position:absolute; top:-15px; left:-25px; }
 .swipe-box p b { color:#07b5ff; font-weight:700; }
+.gradient { width: 100%; position: fixed; bottom: 0; height: 40px; background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 90%); z-index: 9; opacity: 1; transition: all ease .2s; }
+.gradient.off { opacity: 0; }
 
 /* ------------------------------------ card ----------------------------------- */
 #unicef_card { max-width:600px; width:100%; margin:0 auto; height: 100%; position: relative; }
