@@ -16,6 +16,7 @@ $(function () {
 });
 
 $(".swiper-slide, .swiper-slide-duplicate").addClass('goNext goPrev')
+document.body.style.overscrollBehaviorY = 'none';
 
 // 스크롤 제거한 대신 하단에 잔상으로 길이 확인
 $(".swiper-slide, .swiper-slide-duplicate").on('resize scroll', function(){
