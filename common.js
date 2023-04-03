@@ -100,8 +100,8 @@ if ($("body").hasClass('vertical')) {
             startPoint = e.touches[0].pageX; // 터치가 시작되는 위치 저장
             vStartPoint = e.touches[0].pageY;
 
-            console.log('가로 스와이퍼 시작값' + startPoint);
-            console.log('세로 스와이퍼 시작값' + vStartPoint);
+            // console.log('가로 스와이퍼 시작값' + startPoint);
+            // console.log('세로 스와이퍼 시작값' + vStartPoint);
         });
         
         
@@ -110,8 +110,8 @@ if ($("body").hasClass('vertical')) {
             vEndPoint = e.changedTouches[0].pageY;
             detectTouch = 80;
 
-            console.log('가로 스와이퍼 엔드값' + endPoint);
-            console.log('세로 스와이퍼 엔드값' + vEndPoint);
+            // console.log('가로 스와이퍼 엔드값' + endPoint);
+            // console.log('세로 스와이퍼 엔드값' + vEndPoint);
         
             // 아래쪽으로 스와이프 된 경우 (prev move)
             if (vStartPoint < vEndPoint - detectTouch && startPoint < endPoint + 150 && startPoint + 150 > endPoint && eachSlide.classList.contains('goPrev') === true) {
