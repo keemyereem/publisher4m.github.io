@@ -23,7 +23,7 @@ $(".swiper-slide, .swiper-slide-duplicate").on('resize scroll', function(){
     var innerHeight = $(this).innerHeight();
     var scrollHeight = $(this).prop('scrollHeight');
 
-    if (scrollTop + innerHeight === scrollHeight) {
+    if (scrollTop + innerHeight + 60 > scrollHeight) {
         $(this).addClass('goNext')
         alert('a')
     } else if (scrollTop === 0) {
