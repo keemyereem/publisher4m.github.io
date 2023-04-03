@@ -152,10 +152,10 @@ if ($("body").hasClass('vertical')) {
             vEndPoint = e.changedTouches[0].pageY;
         
             // 오른쪽으로 스와이프 된 경우 (prev move)
-            if (startPoint < endPoint - detectTouch && vStartPoint < vEndPoint + 40 && vStartPoint + 40 > vEndPoint ) {
+            if (startPoint < endPoint - detectTouch && vStartPoint < vEndPoint + 150 && vStartPoint + 150 > vEndPoint ) {
                 swiper.slidePrev();
             // 왼쪽으로 스와이프 된 경우 (next move)
-            } else if (startPoint > endPoint + detectTouch && vStartPoint > vEndPoint - 40 && vStartPoint - 40 < vEndPoint) {
+            } else if (startPoint > endPoint + detectTouch && vStartPoint > vEndPoint - 150 && vStartPoint - 150 < vEndPoint) {
                 swiper.slideNext();
             }
         });
