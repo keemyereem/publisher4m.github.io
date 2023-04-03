@@ -2,6 +2,19 @@
 /* --------------------- Unisef-PMS Released 2022.08.31 --------------------- */
 /* ------------------------ Published by 4m Creative ------------------------ */
 
+
+// 모바일 높이값 상하 확장 UI 제외한 실측 크기 환산
+$(function () {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+
+    //resize
+    window.addEventListener("resize", () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+    });
+});
+
 $(".swiper-slide, .swiper-slide-duplicate").addClass('goNext goPrev')
 
 // 스크롤 제거한 대신 하단에 잔상으로 길이 확인
@@ -14,6 +27,7 @@ $(".swiper-slide, .swiper-slide-duplicate").on('resize scroll', function(){
         $(this).addClass('goNext')
         alert('a')
     } else if (scrollTop === 0) {
+        alert('bb')
         $(this).addClass('goPrev')
     } else {
         $(this).removeClass('goNext goPrev')
