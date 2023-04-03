@@ -25,7 +25,7 @@ $(".swiper-slide, .swiper-slide-duplicate").on('resize scroll', function(){
 
     if (scrollTop + innerHeight + 60 > scrollHeight) {
         $(this).addClass('goNext')
-    } else if (scrollTop === 0) {
+    } else if (scrollTop < 60) {
         $(this).addClass('goPrev')
     } else {
         $(this).removeClass('goNext goPrev')
