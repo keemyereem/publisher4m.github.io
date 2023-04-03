@@ -2,7 +2,6 @@
 /* --------------------- Unisef-PMS Released 2022.08.31 --------------------- */
 /* ------------------------ Published by 4m Creative ------------------------ */
 
-
 // 모바일 높이값 상하 확장 UI 제외한 실측 크기 환산
 $(function () {
     let vh = window.innerHeight * 0.01;
@@ -15,7 +14,7 @@ $(function () {
     });
 });
 
-$(".swiper-slide, .swiper-slide-duplicate").addClass('goNext goPrev')
+$(".swiper-slide, .swiper-slide-duplicate").addClass('goNext goPrev');
 document.body.style.overscrollBehaviorY = 'none';
 
 // 스크롤 제거한 대신 하단에 잔상으로 길이 확인
@@ -100,19 +99,26 @@ if ($("body").hasClass('vertical')) {
         eachSlide.addEventListener("touchstart", (e) => {
             startPoint = e.touches[0].pageX; // 터치가 시작되는 위치 저장
             vStartPoint = e.touches[0].pageY;
+
+            console.log('가로 스와이퍼 시작값' + startPoint);
+            console.log('세로 스와이퍼 시작값' + vStartPoint);
         });
+        
         
         eachSlide.addEventListener("touchend", (e) => {
             endPoint = e.changedTouches[0].pageX; // 터치가 끝나는 위치 저장
             vEndPoint = e.changedTouches[0].pageY;
-            detectTouch = 40;
+            detectTouch = 80;
+
+            console.log('가로 스와이퍼 엔드값' + endPoint);
+            console.log('세로 스와이퍼 엔드값' + vEndPoint);
         
             // 아래쪽으로 스와이프 된 경우 (prev move)
-            if (vStartPoint < vEndPoint - detectTouch && startPoint < endPoint + 40 && startPoint + 40 > endPoint && eachSlide.classList.contains('goPrev') === true) {
+            if (vStartPoint < vEndPoint - detectTouch && startPoint < endPoint + 150 && startPoint + 150 > endPoint && eachSlide.classList.contains('goPrev') === true) {
                 swiper.slidePrev();
                 
             // 위쪽으로 스와이프 된 경우 (next move)
-            } else if (vStartPoint > vEndPoint + detectTouch && startPoint > endPoint - 40 && startPoint - 40 < endPoint && eachSlide.classList.contains('goNext') === true) {
+            } else if (vStartPoint > vEndPoint + detectTouch && startPoint > endPoint - 150 && startPoint - 150 < endPoint && eachSlide.classList.contains('goNext') === true) {
                 swiper.slideNext();
             }
         });
